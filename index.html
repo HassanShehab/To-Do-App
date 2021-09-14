@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="icon" href="./img/checkbox.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <h1 id="heading" class="text-center text-primary display-4"> Welcome At ToDo App </h1>
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Task</h5>
+                    <button type="button" id="addCloser" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container col-12 mt-2 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label class="text-center mt-2" for=""> Add Task </label>
+                                    <input type="text" placeholder="Add Task" id="taskInput" class="form-control">
+                                    <div id="invalid" class="alert alert-danger mt-1 none">
+                                        please enter valid data
+                                        <button type="button" id="invalidCloser" class="close" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <button id="addBtn" class="btn btn-primary btn-block mt-3"> Add Now </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="closeBtn" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container col-6 text-center">
+        <button id="popBtn" class="btn btn-primary btn-block mt-4"> Add Task From Here </button>
+    </div>
+
+    <div class="container col-8 mt-4">
+        <div class="card">
+            <div class="card-body">
+                <div id="tasksDiv">
+
+                </div>
+
+                <div id="emptyDiv" class="alert alert-danger">
+                    <h4 class="text-center">No Tasks Added Yet</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div  class="text-center mt-3 mx-auto">
+        <button id="modeBtn" class="btn btn-warning modeBtn">light Mode</button>
+    </div>
+    
+
+
+    <script src="./JS/main.js"></script>
+    <script src="https://kit.fontawesome.com/f8905b4eb0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

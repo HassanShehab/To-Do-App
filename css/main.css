@@ -1,0 +1,33 @@
+*{
+    user-select: none;
+}
+body{
+    background-color: #181818;
+}
+.modeBtn{
+    width: 90px;
+    height: 90px;
+    color: white;
+    border: 5px solid rgb(247, 222, 84);
+    border-radius: 50%;
+}
+.modeBtn:hover{
+    color: white;
+}
+.backMode{
+    background-color: #eee;
+}
+.h1{
+    color: #6b705c !important;
+}
+.card{
+    background-color: #3d3d3d;
+    color: white;
+}
+.none{
+    display: none;
+}
+.background{
+    background-color: darkgray;
+    text-decoration: line-through;
+}
