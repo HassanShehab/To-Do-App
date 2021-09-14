@@ -70,7 +70,6 @@ modeBtn.addEventListener('click' , function(){
         modeBtn.style.border = 'none';
         body.classList.add('backMode');
         heading.classList.add('h1');
-        popBtn.classList.remove('btn-primary');
         popBtn.classList.add('btn-dark')
     }
     else{
@@ -81,6 +80,8 @@ modeBtn.addEventListener('click' , function(){
         modeBtn.style.border = 'none';
         body.classList.remove('backMode');
         heading.classList.remove('h1');
+        popBtn.classList.remove('btn-dark')
+        popBtn.classList.add('btn-primary')
     }
 })
 
